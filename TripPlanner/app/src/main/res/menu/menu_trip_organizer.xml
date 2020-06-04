@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/action_add_friends"
+        android:orderInCategory="98"
+        app:showAsAction = "always"
+        android:icon="@drawable/addpeople"
+        android:title="Add Friends"/>
+
+    <item
+        android:id="@+id/action_add_location"
+        android:orderInCategory="99"
+        app:showAsAction = "always"
+        android:icon="@drawable/addlocation"
+        android:title="Add Location"
+        />
+
+    <item
+        android:id="@+id/action_edit_location"
+        android:orderInCategory="97"
+        app:showAsAction = "never"
+        android:icon="@drawable/editlocation"
+        android:title="Edit/Delete Locations"
+        />
+
+    <item
+        android:id="@+id/action_remove"
+        android:orderInCategory="100"
+        app:showAsAction = "never"
+        android:icon="@drawable/delete"
+        android:title="Remove Group"
+        />
+
+    <item
+        android:id="@+id/action_view_map"
+        android:orderInCategory="101"
+        app:showAsAction = "never"
+        android:icon="@drawable/map"
+        android:title="View places on Map"
+        />
+    <item
+        android:id="@+id/action_navigate"
+        android:orderInCategory="102"
+        app:showAsAction = "never"
+        android:icon="@drawable/map"
+        android:title="Start Navigation"
+        />
+
+
+</menu>

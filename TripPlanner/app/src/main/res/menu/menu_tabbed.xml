@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ushaswini.tripplanner.TabbedActivity">
+
+    <!--<item
+        android:id="@+id/menu_search"
+        android:title="Search"
+        appcompat:showAsAction="always"/>-->
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:icon="@drawable/exit"
+        app:showAsAction="always"/>
+</menu>

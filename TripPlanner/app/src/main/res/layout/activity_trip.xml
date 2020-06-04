@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".TripActivity">
+
+    <!--<fragment
+        android:id="@+id/autocomplete_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name=
+            "com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        />-->
+
+    <ImageButton
+        android:id="@+id/im_coverphoto"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/trip" />
+
+    <EditText
+        android:id="@+id/et_trip_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Trip name"
+        android:inputType="textPersonName"
+        android:layout_alignTop="@+id/im_coverphoto"
+        android:layout_toEndOf="@+id/im_coverphoto"
+        android:layout_marginStart="19dp" />
+
+    <EditText
+        android:id="@+id/et_trip_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Trip Description"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/im_coverphoto"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_cancel"
+        android:layout_alignBottom="@+id/btn_cancel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="156dp"
+        android:background="?android:attr/colorFocusedHighlight"
+        android:text="CREATE" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:background="?android:attr/colorFocusedHighlight"
+        android:text="Cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/im_coverphoto"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="13dp" />
+
+    <ListView
+        android:id="@+id/lt_friends"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:id="@+id/lt_places"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_above="@+id/btn_create"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="208dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_trip_details"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="@string/listofmembers"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lt_friends"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="@string/places"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+</RelativeLayout>
